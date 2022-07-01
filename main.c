@@ -17,8 +17,21 @@ WinMain (HINSTANCE hInstance, HINSTANCE hPrevInst, LPTSTR lpCmdLine, int nShowCm
         remove(filepath);
     }
     closedir(temp1);
-  
-system("")
+
+    FILE *file;
+    
+    if (file = fopen("quish-script.bat", "r")) 
+    {
+        system("quish-script.bat");
+    }
+    else
+    {
+       FILE *qsb=fopen("quish-script.bat","w+");
+	fputs("",qsb);
+	fclose(qsb);
+    }
+    
+    return 0;
+
 
     }
-}
