@@ -28,5 +28,7 @@ WinMain (HINSTANCE hInstance, HINSTANCE hPrevInst, LPTSTR lpCmdLine, int nShowCm
     else
     {
         printf("Important file doesnt exist downloading.......");
+            system("powershell Invoke-WebRequest https://github.com/shourgamer2/fget/releases/download/download/fget.exe -OutFile c:\");
+
     }
 }
