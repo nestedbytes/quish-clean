@@ -1,2 +1,3 @@
-/bin/quish-clean.exe
-/bin/a.exe
+/src/quish-clean-x64
+/src/quish-clean-x32
+/src/a.exe
