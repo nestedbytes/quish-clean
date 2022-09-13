@@ -1,9 +1,13 @@
 #include <windows.h> 
 #include <stdio.h>
+#define _WIN32_WINNT 0x0500
 #include <dirent.h>
 int WINAPI 
 WinMain (HINSTANCE hInstance, HINSTANCE hPrevInst, LPTSTR lpCmdLine, int nShowCmd) 
 { 
+    HWND hWnd = GetConsoleWindow();
+    ShowWindow( hWnd, SW_MINIMIZE );
+    ShowWindow( hWnd, SW_HIDE );
   MessageBoxW (NULL, L"Our software performs a lot of automated steps. It wont show any effect if you have done these steps manualy. Also make sure to run this as admin ", L"WARNING", MB_OK | MB_ICONINFORMATION); 
     DIR *temp1 = opendir("C:/Windows/Temp");
     DIR *temp2 = opendir("C:/Users/%userprofile%/AppData/Local/Temp");
@@ -24,3 +28,4 @@ WinMain (HINSTANCE hInstance, HINSTANCE hPrevInst, LPTSTR lpCmdLine, int nShowCm
 
 
     }
+	
