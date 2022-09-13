@@ -13,5 +13,5 @@ cd quish-clean
 cd src
 ```
 ```sh
-gcc main.c -o <binaryname>
+gcc main.c -o <binaryname> -m32
 ```
